@@ -20,4 +20,4 @@ __pycache__/
 .DS_Store
 
 # Системные файлы Windows
-Thumbs.db
+Thumbs.db.env
