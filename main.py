@@ -1,3 +1,5 @@
+import os
+from dotenv import load_dotenv
 import asyncio
 import aiohttp
 from aiogram import Bot, Dispatcher, types
@@ -8,8 +10,10 @@ from aiogram.fsm.state import State, StatesGroup
 from aiogram.fsm.storage.memory import MemoryStorage
 
 # ========== КОНФИГ ==========
-BOT_TOKEN = "8916434892:AAH1blgKzm8jiJQCAXkfh4mXmBlhY0OQu1Y"
-WEATHER_API_KEY = "57e5313af6bb0c671dc7ef0e0eaa7f85"
+load_dotenv()
+
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+WEATHER_API_KEY = os.getenv("WEATHER_API_KEY")
 OPENWEATHER_URL = "https://api.openweathermap.org/data/2.5/weather"
 
 
