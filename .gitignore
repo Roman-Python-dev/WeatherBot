@@ -1,16 +1,23 @@
+# Файлы с секретами
 .env
 
+# Виртуальные окружения
 .venv/
 venv/
 
+# Кэш Python
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 
+# IDE
 .vscode/
 .idea/
 *.swp
 
+# Системные файлы macOS
 .DS_Store
+
+# Системные файлы Windows
 Thumbs.db
